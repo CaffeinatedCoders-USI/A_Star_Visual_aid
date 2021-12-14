@@ -3,7 +3,6 @@ import os
 from queue import PriorityQueue
 
 WIDTH = 800 #Grid Size
-WIN = pygame.display.set_mode((WIDTH, WIDTH + 100))
 
 #COLORS
 RED = (255, 0, 0)
@@ -171,11 +170,3 @@ def get_clicked_pos(pos, rows, width):
     col = x // gap
     return row, col
 
-#Make instruction labels
-def writeLB(label, x, y):
-    # initialize font; must be called after 'pygame.init()' to avoid 'Font not Initialized' error
-    fontLOC=os.getcwd() + "/arial.ttf"
-    myfont = pygame.font.Font(fontLOC, 15)
-    # render text
-    label = myfont.render(label, 1, (255,255,255))
-    WIN.blit(label, (x, y))
