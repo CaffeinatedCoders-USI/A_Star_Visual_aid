@@ -1,0 +1,9 @@
+
+Package: a-star-visual
+Version: 1.0
+Architecture: all
+Essential: no
+Priority: optional
+Depends: python3
+Maintainer: Patrick Collins
+Description: A star visual help the user to visualize the A star algor

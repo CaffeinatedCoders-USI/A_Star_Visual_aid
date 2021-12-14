@@ -1,0 +1,6 @@
+[Desktop Entry]
+Version=1.0
+Name=A Star Visual
+Exec=/usr/bin/a-star-visual
+Icon=/usr/share/icons/a-star-visual-icon.png
+Terminal=false
