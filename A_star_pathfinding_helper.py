@@ -2,9 +2,8 @@ import pygame
 import os
 from queue import PriorityQueue
 
-# WIDTH = 800 #Grid Size
-# WIN = pygame.display.set_mode((WIDTH, WIDTH + 100))
-# pygame.display.set_caption("A* Path Finding Algorithm")
+WIDTH = 800 #Grid Size
+WIN = pygame.display.set_mode((WIDTH, WIDTH + 100))
 
 #COLORS
 RED = (255, 0, 0)

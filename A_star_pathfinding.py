@@ -54,7 +54,7 @@ def main(win, width):
 
             elif pygame.mouse.get_pressed()[2]: # RIGHT
                 pos = pygame.mouse.get_pos()
-                row, col = get_clicked_pos(pos, ROWS, width)
+                row, col = A_star_pathfinding_helper.get_clicked_pos(pos, ROWS, width)
                 spot = grid[row][col]
                 spot.reset()
                 if spot == start:
@@ -72,7 +72,7 @@ def main(win, width):
                 if event.key == pygame.K_c:
                     start = None
                     end = None
-                    grid = make_grid(ROWS, width)
+                    grid = A_star_pathfinding_helper.make_grid(ROWS, width)
 
     pygame.quit()
 
