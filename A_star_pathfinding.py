@@ -175,7 +175,7 @@ def get_clicked_pos(pos, rows, width):
 #Make instruction labels
 def writeLB(label, x, y):
     # initialize font; must be called after 'pygame.init()' to avoid 'Font not Initialized' error
-    fontLOC=os.getcwd() + "\\arial.ttf"
+    fontLOC=os.getcwd() + "/arial.ttf"
     myfont = pygame.font.Font(fontLOC, 15)
     # render text
     label = myfont.render(label, 1, (255,255,255))
