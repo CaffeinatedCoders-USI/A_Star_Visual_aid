@@ -41,3 +41,6 @@ jobs:
         registry: docker.io
         username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD }}
+    - name: Auto Make Debian Package
+      run: |
+       dpkg-deb --build debpkgs/a_star_visual_1_all/
